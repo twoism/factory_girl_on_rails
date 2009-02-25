@@ -2,7 +2,7 @@ class FactoryGenerator < Rails::Generator::NamedBase
   def manifest
     record do |m|
       m.directory File.join('spec/factories', class_path)
-     	m.template 'factory.rb',  File.join('test/factories', class_path, "#{file_name}_factory.rb")
+     	m.template 'factory.rb',  File.join('spec/factories', class_path, "#{file_name}_factory.rb")
     end
   end
 
